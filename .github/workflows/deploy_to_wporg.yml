@@ -1,0 +1,23 @@
+name: Deploy to WordPress.org
+on:
+  push:
+    branches:
+      - master
+    tags:
+      - "*"
+jobs:
+  tag:
+    name: New tag
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@v1.1.0
+        with:
+          node-version: '11.x'
+      - run: npm install
+      - run: gulp build:plugin
+      - name: WordPress Plugin Deploy
+        uses: woostorenow/action-wordpress-plugin-deploy@master
+        env:
+          SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
+          SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
