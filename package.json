@@ -15,7 +15,7 @@
     },
     "plugin": {
         "namespace": "Plugin_Boilerplate",
-        "prefix": "plugin_boilerplate",
+        "prefix": "wsn_pb",
         "slug": "plugin-boilerplate",
         "name": "Plugin Boilerplate by VNH",
         "short_name": "Plugin Boilerplate",

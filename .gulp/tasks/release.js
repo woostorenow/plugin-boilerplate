@@ -9,7 +9,7 @@ import notify from "gulp-notify";
 
 import paths from "../paths";
 
-const { plugin, freemius } = require("../../package");
+const { plugin } = require("../../package");
 
 export function zipPlugin() {
 	return gulp
