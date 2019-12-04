@@ -14,7 +14,7 @@ class Admin_Notices implements Bootable {
 	}
 
 	public function global_note() {
-		if (!is_plugin_active('woocommerce/woocommerce.php')) {
+		if (!is_woocommerce_active()) {
 			if (!PAnD::is_admin_notice_active('disable-woo-forever')) {
 				return;
 			}

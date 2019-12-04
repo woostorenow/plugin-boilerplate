@@ -68,7 +68,7 @@ final class Plugin extends Singleton implements Loadable, Bootable, Initable {
 	}
 
 	public function core() {
-		if (!is_plugin_active('woocommerce/woocommerce.php')) {
+		if (!is_woocommerce_active()) {
 			return;
 		}
 	}
