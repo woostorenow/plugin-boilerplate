@@ -1,6 +1,6 @@
 {
     "autoload": {
-        "files": ["constants.php", "helpers.php","helpers_global.php","vendor/freemius/wordpress-sdk/start.php"],
+        "files": ["constants.php", "helpers.php","vendor/freemius/wordpress-sdk/start.php"],
         "psr-4": {
             "vnh_namespace\\": "."
         }

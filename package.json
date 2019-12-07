@@ -2,8 +2,8 @@
     "author": "Vu Nam Hung",
     "license": "GPL-3.0",
     "scripts": {
-        "download:libs": "node ./node_modules/frontend-dependencies/index.js",
-        "clean:composer": "rm -rf ./vendor && rm -rf src/plugin/vendor",
+        "download:libs": "node node_modules/frontend-dependencies/index.js",
+        "clean:composer": "rm -rf vendor && rm -rf src/plugin/vendor",
         "start": "webpack --watch & gulp default",
         "build": "webpack --mode=production",
         "build:analytic": "webpack --mode=production --analytic"
@@ -19,8 +19,9 @@
         "slug": "plugin-boilerplate",
         "name": "Plugin Boilerplate by VNH",
         "short_name": "Plugin Boilerplate",
+        "description": "vnh_name plugin allows your customers to browse products and checkout in multiple currencies.",
         "version": "1.0.0",
-        "tags": "woocommerce, currency, switcher, exchange, currency for woocommerce, multi currency for woocommerce, woocommerce multi currency, woocommerce currency, currency switcher, woocommerce currency, bitcoin",
+        "tags": "woocommerce, currency",
         "uri": "https://woostore.net",
         "author": "WooStore Team",
         "contributors": "woostore",
@@ -34,7 +35,6 @@
         "license": "GPL-3.0",
         "license_uri": "http://www.opensource.org/licenses/gpl-license.php",
         "copyright": "Copyright (c) 2019, WooStore Team",
-        "description": "vnh_name plugin allows your customers to browse products and checkout in multiple currencies. The plugin converts WooCommerce product price, coupons, shipping price, taxes to customer-preferred currency. Customers can select the currency on front-end with widget, currencies bar. Or you can set the plugin to detect currency based on customer’s location, site’s language.",
         "wc_requires": "3.2.0",
         "wc_tested_up_to": "3.8.0"
     },
