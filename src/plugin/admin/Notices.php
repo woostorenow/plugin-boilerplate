@@ -27,10 +27,5 @@ class Notices implements Initable, Bootable {
 				esc_html__('Please install and activate WooCommerce to use vnh_name plugin.', 'vnh_textdomain')
 			);
 		}
-
-		if (is_plugin_active('vnh_slug-pro/index.php')) {
-			deactivate_plugins(PLUGIN_BASE);
-			unset($_GET['activate']);
-		}
 	}
 }
