@@ -26,4 +26,5 @@ define(__NAMESPACE__ . '\PLUGIN_DOCUMENT_URI', esc_url(get_file_data(PLUGIN_FILE
 const DS = '/';
 const DEV_MODE = 'vnh_dev_mode';
 const WPORG = false;
-const PREMIUM_URL = 'http://woostore.net/';
+const PREMIUM_URL = 'https://woostore.net/';
+const PLUGINS_LIST_FILE = 'https://woostore.net/plugins.json';
