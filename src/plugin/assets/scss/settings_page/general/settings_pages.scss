@@ -56,6 +56,32 @@
 	}
 	.info-tab-content {
 		padding: baseline(2) 0 0;
+		h2 {
+			position: relative;
+			padding-bottom: 12px;
+			border-bottom: 1px solid #eee;
+			font-size: 1.5em;
+			&:before,
+			&:after {
+				position: absolute;
+				left: 20px;
+				display: block;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				content: "";
+			}
+			&:after {
+				top: 10px;
+				border-width: 11px;
+				border-color: transparent transparent #fff transparent;
+			}
+			&:before {
+				top: 9px;
+				border-width: 11px;
+				border-color: transparent transparent #ddd transparent;
+			}
+		}
 	}
 	.debug-log-textarea {
 		min-height: 500px;
@@ -63,15 +89,8 @@
 		font-family: Consolas, Monaco, monospace;
 	}
 	.form-table {
-		.tooltip {
-			position: absolute;
-			left: baseline(2);
-			margin-top: 3px;
-			margin-bottom: 0;
-			max-width: 205px;
-			font-size: 75%;
-			opacity: 0;
-			transition: 0.3s;
+		.woocommerce-help-tip {
+			margin-left: -25px;
 		}
 		tr:hover .tooltip {
 			opacity: 1;

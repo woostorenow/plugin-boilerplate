@@ -33,7 +33,7 @@ final class Plugin {
 
 	public function __construct() {
 		$this->load();
-		$this->freemius();
+		//$this->freemius();
 		do_action('wvsl_fs_loaded');
 		$this->init();
 		$this->core();
